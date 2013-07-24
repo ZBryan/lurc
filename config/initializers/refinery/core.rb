@@ -15,7 +15,7 @@ Refinery::Core.configure do |config|
   # config.base_cache_key = :refinery
 
   # Site name
-  # config.site_name = "Company Name"
+  config.site_name = "Central Area lurc"
 
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
@@ -26,7 +26,7 @@ Refinery::Core.configure do |config|
   # config.authenticity_token_on_frontend = true
 
   # Hide/show child pages in menu
-  # config.menu_hide_children = false
+  # config.menu_hide_children = true
 
   # CSS class selectors for menu helper
   # config.menu_css = {:selected=>"selected", :first=>"first", :last=>"last"}

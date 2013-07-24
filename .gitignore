@@ -21,6 +21,10 @@ db/*.sqlite3-journal
 tmp
 tmp/**/*
 
+# Database config
+/.yml
+/.yml*
+
 # Documentation
 doc/api
 doc/app
