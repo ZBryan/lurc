@@ -7,10 +7,18 @@
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div id="page_container" class="container">
       <header id="header">
+        
         <%= render '/refinery/header' -%>
       </header>
       <section id="page">
+        <%= render '/refinery/sidebar' %>
         <%= yield %>
+        <!-- Check for Zepto support, load jQuery if necessary -->
+<script>
+  document.write('<script src=/js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
       </section>
       <footer>
         <%= render '/refinery/footer' -%>
