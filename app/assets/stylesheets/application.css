@@ -11,5 +11,10 @@
  *= require_self
  *= require bootstrap
  *= require custom-styles
- */
  *= require foundation_and_overrides
+ */
+
+#menu li {
+	float: left;
+	padding: 10px;
+}
